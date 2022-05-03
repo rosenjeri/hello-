@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    /*padding: 0 8px;*/
+    /*background: white;*/
+    background-position: center;
+    position: relative;
+    background-image: url('images/h8.jpg');
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 140px;
+}
+.nav-links{
+    padding: 28px 0;
+}
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+    position: relative;
+}
+.nav-links li a::after{
+    content: '';
+    background: darkred;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+.nav-links li a:hover::after{
+    width: 100%;
+}
+.btn{
+    background: red;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    max-width: 600px;
+    transform: translate(-50% -50%);
+    text-align: center;
+}
+.content h1{
+    /*font-size: 65px;*/
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.content button{
+    background: red;
+    color: black;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+/*---why choose us?---*/
+.why{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    text-align: center;
+    display: block;
+    float: top;
+}
+h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+/*.why-col{*/
+    /*flex-basis: 31%;*/
+    /*background: red;*/
+    /*border-radius: 10px;*/
+    /*margin-bottom: 5%;*/
+    /*padding: 20px ;*/
+    /*box-sizing: border-box;*/
+/*}*/
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+/*---how it works---*/
+.hit{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+}
+.img{
+    width: 50%;
+    display: block;
+    float: right;
+}
+.hit-btn{
+    border: solid;
+    display: inline-block;
+    background: red;
+    cursor: pointer;
+}
+/*---ready to cook---*/
+.ready{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+    margin: auto;
+}
+.ready-btn{
+    display: inline-block;
+    background: red;
+    cursor: pointer;
+}
+#slider{
+    overflow: hidden;
+ }
+#slider figure{
+    position: relative;
+    width: 150%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+/*---hello--*/
+.hello{
+    text-align: center;
+    font-size: 50px;
+}
+
+/*---hungry for more---*/
+.more{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    text-align: center;
+    display: block;
+    float: top;
+    background: plum;
+    min-height: 120vh;
+    width: 100%;
+}
+h6{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+
+}
+p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.form-box{
+    padding: 10px;
+    border-radius: 5px;
+}
+.form-box input{
+    font-size: 18px;
+    color: black;
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+    background: white;
+}
+.form-box button{
+    color: white;
+    padding: 15px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background: red;
+    cursor: pointer;
+    transition: 3s;
+}
+/*---footer---*/
+/*.footer{*/
+/*    background-image: url('images/bg6.jpg');*/
+/*    text-align: center;*/
+/*}*/
+/*.icons .fa{*/
+/*    color: red;*/
+/*    margin: 0 13px;*/
+/*    cursor: pointer;*/
+/*    padding: 18px 0;*/
+/*}*/
+/*.fa-heart-o{*/
+/*    color: red;*/
+/*}*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+
+}
+.footer{
+    background-color: cornflowerblue;
+    padding: 70px 0;
+}
+.footer-col{
+     width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: darkred;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-top: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: black;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: gray;
+    margin: 0 10px 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: black;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: black;
+    background-color: white;
+}
+/*---responsive---*/
+@media(max-width: 767px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
